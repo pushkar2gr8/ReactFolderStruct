@@ -1,2 +1,0 @@
-# ReactFolderStruct
-ReactFolderStruct
