@@ -1,20 +1,19 @@
-import { DrawerNavigator, createAppContainer } from "react-navigation";
-import AppNavigator from "./AppNavigator";
+import { DrawerNavigator } from "react-navigation";
+import HomeFeed from "./AppNavigator";
 import CampList from "../Components/CampList";
+import SideMenu from "../Components/SideMenu/SideMenu";
 
-const AppDrawer = DrawerNavigator({
-  AppNavigator: {
-    screen: AppNavigator,
-    navigationOptions: {
-      drawerLabel: "HAHA"
+export default DrawerNavigator(
+  {
+    Home: {
+      screen: HomeFeed
+    },
+    Camps: {
+      screen: CampList
     }
   },
-  CampList: {
-    screen: CampList,
-    navigationOptions: {
-      drawerLabel: "Setting"
-    }
+  {
+    contentComponent: SideMenu,
+    drawerWidth: 300
   }
-});
-//const drawer = createAppContainer(AppDrawer);
-export default AppDrawer;
+);

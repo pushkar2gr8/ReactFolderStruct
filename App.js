@@ -7,10 +7,10 @@
  */
 
 import React, { Component } from "react";
-import { Navigator } from "./Router/AppDrawer";
+import Router from "./Router/AppDrawer";
 
 export default class App extends Component {
   render() {
-    return <Navigator />;
+    return <Router />;
   }
 }

@@ -1,8 +1,8 @@
-import { createStackNavigator, createAppContainer } from "react-navigation";
+import { StackNavigator } from "react-navigation";
 import HomeFeed from "../Components/HomeFeed";
 import CampList from "../Components/CampList";
 
-const AppNavigator = createStackNavigator({
+export const AppNavigator = StackNavigator({
   Home: { screen: HomeFeed },
   CampList: { screen: CampList }
 });
