@@ -7,7 +7,7 @@
  */
 
 import React, { Component } from "react";
-import Router from "./Router/AppDrawer";
+import Router from "./Router/AppNavigator";
 
 export default class App extends Component {
   render() {

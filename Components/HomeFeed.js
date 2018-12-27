@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, StyleSheet, Text, TouchableOpacity } from "react-native";
+import { View, StyleSheet, Text, TouchableOpacity, Image } from "react-native";
 import { SunButton } from "../Views/SunViews";
 
 export default class HomeFeed extends Component {
@@ -13,7 +13,7 @@ export default class HomeFeed extends Component {
         <Text>feed will go here</Text>
         <TouchableOpacity
           style={styles.button}
-          onPress={() => this.props.navigation.navigate("CampList")}
+          onPress={() => this.props.navigation.navigate("Camp")}
         >
           <Text>Click</Text>
         </TouchableOpacity>
