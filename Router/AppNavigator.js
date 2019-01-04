@@ -3,7 +3,7 @@
  */
 
 import React from "react";
-import { TouchableOpacity, Image } from "react-native";
+import { TouchableOpacity, Image, StyleSheet } from "react-native";
 import {
   createStackNavigator,
   createDrawerNavigator,
@@ -11,50 +11,69 @@ import {
   SafeAreaView
 } from "react-navigation";
 
-import HomeFeed from "../Components/HomeFeed";
-import CampList from "../Components/CampList";
+import HomeFeed from "../Containers/HomeFeed";
+import CampList from "../Containers/CampList";
+import SplashScreen from "../Containers/SplashScreen";
 
 /**
  * navigation object is passed as a props to components
  */
-const HomeScreen = ({ navigation }) => <HomeFeed navigation={navigation} />;
+const LaunchScreen = ({ navigation }) => (
+  <SplashScreen navigation={navigation} />
+);
+const homeScreen = ({ navigation }) => <HomeFeed navigation={navigation} />;
+const campScreen = ({ navigation }) => <CampList navigation={navigation} />;
 
 /**
  * Action bar maintained here for each page
  */
-HomeScreen.navigationOptions = ({ navigation }) => {
+homeScreen.navigationOptions = ({ navigation }) => {
   return {
     headerTitle: "Homefeed",
+    headerTintColor: "#666666",
+    headerStyle: {
+      backgroundColor: "#fff"
+    },
     headerLeft: (
       <TouchableOpacity
-        style={{
-          height: 40,
-          width: 40,
-          justifyContent: "center",
-          alignItems: "center"
-        }}
+        style={styles.buttonContainer}
         onPress={() => navigation.openDrawer()}
       >
         <Image
-          style={{ height: 36, width: 36 }}
-          source={require("../assets/menu.png")}
+          style={styles.image}
+          source={require("../assets/leftMenu.png")}
+        />
+      </TouchableOpacity>
+    ),
+    headerRight: (
+      <TouchableOpacity
+        style={styles.buttonContainer}
+        onPress={() => alert("language change")}
+      >
+        <Image
+          style={styles.image}
+          source={require("../assets/rightMenu.png")}
         />
       </TouchableOpacity>
     )
   };
 };
 
-const CampScreen = ({ navigation }) => <CampList navigation={navigation} />;
-CampScreen.navigationOptions = {
+campScreen.navigationOptions = {
   headerTitle: "CampScreen"
+};
+
+LaunchScreen.navigationOptions = {
+  headerVisible: false
 };
 
 /**
  * Screen movement stack
  */
 const AppStack = createStackNavigator({
-  Home: { screen: HomeScreen },
-  Camp: { screen: CampScreen }
+  Splash: { screen: LaunchScreen },
+  Home: { screen: homeScreen },
+  Camp: { screen: campScreen }
 });
 
 /**
@@ -79,6 +98,16 @@ const DrawerExample = createDrawerNavigator(
     }
   }
 );
+
+const styles = StyleSheet.create({
+  buttonContainer: {
+    height: 40,
+    width: 40,
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  image: { height: 22, width: 22 }
+});
 
 const AppNav = createAppContainer(DrawerExample);
 export default AppNav;

@@ -71,10 +71,214 @@
       "Photo": "https://cdn2.suncamp.eu/5/6/4/5/5645a97b8fd0c.jpeg"
     },
     {
-      "Name": "camping 2"
+      "Name": "camping 2",
+      "URL": "https://www.suncamp.nl/italie/veneto/verona/peschiera-del-garda/camping-bella-italia-101059/",
+      "Geo": {
+        "Country": "Italy",
+        "Region": "Veneto",
+        "Place": "Peschiera del Garda"
+      },
+      "RegionImage": "//cdn1.acsi.eu/suncamp/assets/2015/suncamp/images/resultlist_map/3336901.png",
+      "Distance": "1.172",
+      "ReviewScore": "8.1",
+      "Sunlodge": true,
+      "Glamping": true,
+      "Discount": "-4%",
+      "FromPrice": "€ 228",
+      "Price": "€ 218",
+      "Properties": [
+        {
+          "Name": "Barbecue",
+          "Value": true,
+          "ID": "1"
+        },
+        {
+          "ID": "2",
+          "Name": "Campsite shop",
+          "Value": false
+        },
+        {
+          "ID": "3",
+          "Name": "Located by a lake/recreation pond (max. 0.1 km)",
+          "Value": true
+        },
+        {
+          "ID": "4",
+          "Name": "Toddlers' pool (ages 1-3, < 40 cm)",
+          "Value": true
+        },
+        {
+          "ID": "5",
+          "Name": "Tropical swimming paradise",
+          "Value": false
+        },
+        {
+          "ID": "6",
+          "Name": "Children's playground: large",
+          "Value": true
+        },
+        {
+          "ID": "7",
+          "Name": "Water slide (> 10 m)",
+          "Value": false
+        },
+        {
+          "ID": "8",
+          "Name": "Entertainment for children up to 12 years (min. twice a week - h.s.)",
+          "Value": true
+        },
+        {
+          "ID": "9",
+          "Name": "Outdoor swimming pool",
+          "Value": false
+        },
+        {
+          "ID": "10",
+          "Name": "Situated on the coast (max. 0.5 km)",
+          "Value": true
+        }
+      ],
+      "Photo": "https://cdn2.suncamp.eu/5/6/4/5/5645a97b8fd0c.jpeg"
     },
     {
-      "Name": "camping 3"
+      "Name": "camping 3",
+      "URL": "https://www.suncamp.nl/italie/veneto/verona/peschiera-del-garda/camping-bella-italia-101059/",
+      "Geo": {
+        "Country": "Italy",
+        "Region": "Veneto",
+        "Place": "Peschiera del Garda"
+      },
+      "RegionImage": "//cdn1.acsi.eu/suncamp/assets/2015/suncamp/images/resultlist_map/3336901.png",
+      "Distance": "1.172",
+      "ReviewScore": "8.1",
+      "Sunlodge": true,
+      "Glamping": true,
+      "Discount": "-4%",
+      "FromPrice": "€ 228",
+      "Price": "€ 218",
+      "Properties": [
+        {
+          "Name": "Barbecue",
+          "Value": true,
+          "ID": "1"
+        },
+        {
+          "ID": "2",
+          "Name": "Campsite shop",
+          "Value": false
+        },
+        {
+          "ID": "3",
+          "Name": "Located by a lake/recreation pond (max. 0.1 km)",
+          "Value": true
+        },
+        {
+          "ID": "4",
+          "Name": "Toddlers' pool (ages 1-3, < 40 cm)",
+          "Value": true
+        },
+        {
+          "ID": "5",
+          "Name": "Tropical swimming paradise",
+          "Value": false
+        },
+        {
+          "ID": "6",
+          "Name": "Children's playground: large",
+          "Value": true
+        },
+        {
+          "ID": "7",
+          "Name": "Water slide (> 10 m)",
+          "Value": false
+        },
+        {
+          "ID": "8",
+          "Name": "Entertainment for children up to 12 years (min. twice a week - h.s.)",
+          "Value": true
+        },
+        {
+          "ID": "9",
+          "Name": "Outdoor swimming pool",
+          "Value": false
+        },
+        {
+          "ID": "10",
+          "Name": "Situated on the coast (max. 0.5 km)",
+          "Value": true
+        }
+      ],
+      "Photo": "https://cdn2.suncamp.eu/5/6/4/5/5645a97b8fd0c.jpeg"
+    },
+    {
+      "Name": "camping 4",
+      "URL": "https://www.suncamp.nl/italie/veneto/verona/peschiera-del-garda/camping-bella-italia-101059/",
+      "Geo": {
+        "Country": "Italy",
+        "Region": "Veneto",
+        "Place": "Peschiera del Garda"
+      },
+      "RegionImage": "//cdn1.acsi.eu/suncamp/assets/2015/suncamp/images/resultlist_map/3336901.png",
+      "Distance": "1.172",
+      "ReviewScore": "8.1",
+      "Sunlodge": true,
+      "Glamping": true,
+      "Discount": "-4%",
+      "FromPrice": "€ 228",
+      "Price": "€ 218",
+      "Properties": [
+        {
+          "Name": "Barbecue",
+          "Value": true,
+          "ID": "1"
+        },
+        {
+          "ID": "2",
+          "Name": "Campsite shop",
+          "Value": false
+        },
+        {
+          "ID": "3",
+          "Name": "Located by a lake/recreation pond (max. 0.1 km)",
+          "Value": true
+        },
+        {
+          "ID": "4",
+          "Name": "Toddlers' pool (ages 1-3, < 40 cm)",
+          "Value": true
+        },
+        {
+          "ID": "5",
+          "Name": "Tropical swimming paradise",
+          "Value": false
+        },
+        {
+          "ID": "6",
+          "Name": "Children's playground: large",
+          "Value": true
+        },
+        {
+          "ID": "7",
+          "Name": "Water slide (> 10 m)",
+          "Value": false
+        },
+        {
+          "ID": "8",
+          "Name": "Entertainment for children up to 12 years (min. twice a week - h.s.)",
+          "Value": true
+        },
+        {
+          "ID": "9",
+          "Name": "Outdoor swimming pool",
+          "Value": false
+        },
+        {
+          "ID": "10",
+          "Name": "Situated on the coast (max. 0.5 km)",
+          "Value": true
+        }
+      ],
+      "Photo": "https://cdn2.suncamp.eu/5/6/4/5/5645a97b8fd0c.jpeg"
     }
   ],
   "searchtime": true
