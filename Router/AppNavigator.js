@@ -64,7 +64,7 @@ campScreen.navigationOptions = {
 };
 
 LaunchScreen.navigationOptions = {
-  headerVisible: false
+  header: null
 };
 
 /**

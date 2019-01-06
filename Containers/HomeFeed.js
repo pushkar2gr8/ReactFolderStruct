@@ -17,6 +17,8 @@ import mockdata from "../assets/mockdata.json";
 
 import SearchBar from "../Components/SunSearchBar";
 
+import { thunk_action_creator } from "../Actions/actions";
+
 const mapStateToProps = state => {
   return {
     fetching: state.fetching,
@@ -27,7 +29,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    onRequest: () => dispatch({ type: "API_CALL_REQUEST" })
+    onRequest: () => dispatch(thunk_action_creator)
   };
 };
 
@@ -63,13 +65,14 @@ class HomeFeed extends Component {
     return (
       <View style={styles.mainContainer}>
         <View style={styles.bookingDetails}>
-          {/* <Text>{fetching ? "Fetching..." : fetchedData}</Text> */}
+          <Text>{fetching ? "Fetching..." : fetchedData}</Text>
           <Text>Zoek en boek campings</Text>
           <SearchBar
             hidden={false}
             placeHolder={"Land / regio / plaats / naam"}
             onChangeText={str => this._onSearch(str)}
           />
+
           <View style={styles.calenderContainer}>
             <TouchableOpacity style={styles.calender} />
             <View style={{ width: 10 }} />
@@ -92,21 +95,20 @@ class HomeFeed extends Component {
               <Text>Adults</Text>
               <Text>number</Text>
             </View>
+
             <View style={styles.seperator} />
             <View style={styles.customerType}>
               <Text>Children</Text>
               <Text>number</Text>
             </View>
+
             <View style={styles.seperator} />
             <View style={styles.customerType}>
               <Text>Pets</Text>
               <Text>number</Text>
             </View>
           </View>
-          <TouchableOpacity
-            style={styles.button}
-            onPress={() => alert(searchString)}
-          >
+          <TouchableOpacity style={styles.button} onPress={() => onRequest()}>
             <Text style={{ color: "#fff" }}>Click</Text>
           </TouchableOpacity>
         </View>

@@ -1,8 +1,5 @@
 import React, { Component } from "react";
-import { View, Image, Dimensions, StyleSheet } from "react-native";
-
-const gifHeight = Dimensions.get("window").height;
-const gifWidth = Dimensions.get("window").width;
+import { View, Image, StyleSheet } from "react-native";
 
 export default class SplashScreen extends Component {
   constructor(props) {
@@ -13,12 +10,15 @@ export default class SplashScreen extends Component {
     return (
       <View style={styles.container}>
         <Image
-          style={{ height: gifHeight, width: gifWidth }}
+          style={{
+            height: 160,
+            width: 320
+          }}
           source={require("../assets/splashLogo.gif")}
           onLoadEnd={() =>
             setTimeout(() => {
               this.props.navigation.navigate("Home");
-            }, 5000)
+            }, 4000)
           }
         />
       </View>

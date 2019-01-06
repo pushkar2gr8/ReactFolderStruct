@@ -1,16 +1,17 @@
-//action types
-const API_CALL_REQUEST = "API_CALL_REQUEST";
-const API_CALL_SUCCESS = "API_CALL_SUCCESS";
-const API_CALL_FAILURE = "API_CALL_FAILURE";
+import {
+  API_CALL_REQUEST,
+  API_CALL_SUCCESS,
+  API_CALL_FAILURE
+} from "../Actions/actiontypes";
 
 //reducer
 initialState = {
   fetching: null,
   error: null,
-  fetchedData: null
+  fetchedData: "NO DATA"
 };
 
-export function reducer(state = initialState, action) {
+const reducer = (state = initialState, action) => {
   switch (action.type) {
     case API_CALL_REQUEST:
       return {
@@ -36,4 +37,6 @@ export function reducer(state = initialState, action) {
     default:
       return state;
   }
-}
+};
+
+export default reducer;
